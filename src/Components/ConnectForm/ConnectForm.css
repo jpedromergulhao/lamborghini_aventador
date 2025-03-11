@@ -1,0 +1,59 @@
+.connect {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.formContainer {
+    margin: 80px auto auto auto;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.formContainer h1{
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    font-size: 12px;
+}
+form span,
+.submit{
+    font-weight: bold;
+}
+
+label{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.infos, 
+textarea{
+    background-color: #262626;
+    border: 1px solid #ebebeb;
+    padding: 10px;
+}
+
+.submit{
+    background-color: #262626;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: #cc8503;
+    color: #262626;
+}

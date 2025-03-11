@@ -1,0 +1,23 @@
+header {
+    height: 100vh;
+    background-image: url("../../assets/4.png");
+    background-size: cover;
+    padding: 80px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+.info {
+    max-width: 500px;
+    margin-top: 200px;
+}
+
+.info h1 {
+    font-size: 60px;
+}
+
+.info span {
+    font-size: 18px;
+    line-height: 24px;
+}

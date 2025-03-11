@@ -1,0 +1,46 @@
+.navBar {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #ebebeb;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navLogo {
+    width: 40px;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 40px;
+}
+
+.navBtn {
+    border-radius: 50px;
+    padding: 10px 38px;
+    background-color: #262626;
+    color: #ebebeb;
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+.navBtn:hover {
+    background-color: #cc8503;
+    color: #262626;
+}
+
+li a {
+    color: #262626;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+main {
+    background-color: #ebebeb;
+    padding: 100px 0;
+}
+
+.topMain {
+    border-bottom: 1px solid #adadad;
+}
+
+.imgSet {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imgBorder {
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    max-width: 400px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.imgBorder img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: -60px;
+}
+
+.imgBorder img:hover {
+    transform: scale(1.05);
+}
+
+.imgSet p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #262626;
+}

@@ -1,0 +1,48 @@
+footer {
+    background-color: #262626;
+    padding: 50px 40px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.linksContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.links a {
+    color: #ebebeb;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icons {
+    width: 20px;
+}
+
+footer p {
+    margin: 40px 0;
+}

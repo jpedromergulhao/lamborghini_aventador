@@ -1,0 +1,83 @@
+.hero {
+    margin: 0 100px;
+    margin-top: 280px;
+    color: #ebebeb;
+}
+
+.heroText {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.heroExplore {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    background-color: #ebebeb;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.6s ease-in-out;
+}
+
+.heroExplore:hover {
+    padding-left: 50px;
+}
+
+.heroExplore p {
+    color: #262626;
+}
+
+.heroDotPlay {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroDots {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    list-style: none;
+}
+
+.heroDot {
+    width: 15px;
+    height: 15px;
+    background: #ebebeb;
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.heroDot:hover {
+    width: 17px;
+    height: 17px;
+}
+
+.heroDot.gold {
+    background: #cc8503;
+}
+
+.heroPlay {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.heroPlay img {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border-radius: 100%;
+}
+
+.heroPlay img:hover {
+    background-color: #cc8503;
+}
+
+.heroPlay p {
+    font-size: 19px;
+}
