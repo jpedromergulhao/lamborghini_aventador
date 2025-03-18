@@ -2,7 +2,6 @@
     width: 100vw;
     height: 100vh;
     padding: 50px;
-    box-sizing: border-box;
 }
 
 .formContainer {
@@ -10,7 +9,6 @@
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: darken;
-    box-sizing: border-box;
     padding: 20px 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -19,6 +17,7 @@
 
 .formContainer h1{
     font-size: 20px;
+    line-height: 28px;
 }
 
 form {
@@ -46,14 +45,38 @@ textarea{
 }
 
 .submit{
-    background-color: #262626;
+    background-color: #ebebeb;
     padding: 10px;
     transition: all 0.2s ease-in-out;
     margin-top: 20px;
+    color: #262626;
 }
 
 .submit:hover{
     cursor: pointer;
     background-color: #cc8503;
     color: #262626;
+}
+
+@media (max-width: 850px){
+    .connect {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .formContainer {
+        padding: 10px 20px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 425px){
+
+    .formContainer{
+        margin: 60px auto auto auto;
+    }
+
+    .formContainer h1{
+        font-size: 15px;
+        line-height: 23px;
+    }
 }

@@ -1,13 +1,14 @@
 .hero {
-    margin: 0 100px;
-    margin-top: 280px;
+    padding: 200px 100px 0 100px;
     color: #ebebeb;
 }
 
-.heroText {
-    font-size: 30px;
+.hero h1 {
+    font-size: 60px;
     font-weight: 500;
+    margin-bottom: 30px;
 }
+
 
 .heroExplore {
     display: flex;
@@ -80,4 +81,114 @@
 
 .heroPlay p {
     font-size: 19px;
+}
+
+@media (max-width: 1170px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .hero {
+        padding: 200px 60px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .heroExplore {
+        gap: 20px;
+        width: fit-content;
+        padding: 5px 8px;
+        padding-left: 20px;
+        border-radius: 60px;
+    }
+
+    .heroExplore p {
+        font-size: 15px;
+    }
+
+    .heroExplore img {
+        height: 40px;
+    }
+
+    .heroDotPlay {
+        margin-top: 200px;
+    }
+
+    .heroPlay img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 750px) {
+    .hero {
+        padding: 200px 40px 0 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        padding: 200px 20px 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .heroExplore {
+        gap: 15px;
+        padding-left: 15px;
+    }
+
+    .heroDotPlay {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: flex-start
+    }
+
+    .heroPlay {
+        gap: 15px;
+    }
+
+    .heroPlay img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 380px){
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .heroExplore {
+        gap: 10px;
+        padding-left: 10px;
+    }
+
+    .heroExplore p{
+        font-size: 12px;
+    }
+
+    .heroExplore img{
+        height: 30px;
+    }
+
+    .heroPlay p {
+        font-size: 15px;
+    }
+
+    .heroDot{
+        width: 10px;
+        height: 10px;
+    }
+
+    .heroDot:hover {
+        width: 13px;
+        height: 13px;
+    }
 }

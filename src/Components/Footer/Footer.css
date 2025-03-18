@@ -46,3 +46,30 @@ footer {
 footer p {
     margin: 40px 0;
 }
+
+@media (max-width: 780px){
+    .linksContainer {
+        flex-direction: column;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 450px){
+
+    footer{
+        padding: 50px 10px;
+    }
+
+    .links a{
+        font-size: 8px;
+    }
+
+    .socialMedia{
+        gap: 10px;
+    }
+
+    .icons{
+        width: 15px;
+    }
+}

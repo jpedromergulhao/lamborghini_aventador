@@ -37,3 +37,34 @@ main {
     margin-top: 10px;
     color: #262626;
 }
+
+@media (max-width: 1220px) {
+    .imgBorder {
+        max-width: 300px;
+        max-height: 75px;
+    }
+}
+
+@media (max-width: 950px) {
+    .imgSet {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imgSet div {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+
+    main {
+        padding: 80px 0;
+    }
+
+    .imgBorder {
+        max-width: 200px;
+        max-height: 50px;
+    }
+}

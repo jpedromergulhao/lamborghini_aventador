@@ -10,12 +10,10 @@ function Hero({ heroData, heroCount, setHeroCount, setPlayStatus, playStatus }) 
     return (
         <>
             <div className="hero">
-                <div className="heroText">
-                    <h1>{heroData.text}</h1>
-                </div>
+                <h1>{heroData[heroCount].text}</h1>
                 <Link to="/conncet" className="heroExplore">
                     <p>Experience Exclusivity</p>
-                    <img src={arrowBtn} alt="Arrow Button" />
+                    <img src={arrowBtn} alt="Arrow button" />
                 </Link>
                 <div className="heroDotPlay">
                     <ul className="heroDots">
@@ -28,7 +26,7 @@ function Hero({ heroData, heroCount, setHeroCount, setPlayStatus, playStatus }) 
                         ))}
                     </ul>
                     <div className="heroPlay">
-                        <img onClick={() => setPlayStatus(!playStatus)} src={playStatus ? pauseIcon : playIcon} alt="" />
+                        <img onClick={() => setPlayStatus(!playStatus)} src={playStatus ? pauseIcon : playIcon} alt="Play button" />
                         <p>Watch the Thrill Unfold</p>
                     </div>
                 </div>

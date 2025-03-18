@@ -1,14 +1,13 @@
 .navBar {
     display: flex;
-    gap: 100px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 100px;
     background-color: #ebebeb;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000;
     width: 100%;
     box-sizing: border-box;
 }
@@ -43,4 +42,83 @@
 li a {
     color: #262626;
     font-weight: bold;
+}
+
+.menuIcon {
+    height: 20px;
+    display: none;
+}
+
+@media (max-width: 1240px) {
+
+    .navBar {
+        gap: 50px;
+    }
+
+    li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1065px) {
+
+    .menuIcon {
+        display: block;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 40px;
+        transition: right .6s ease-in-out;
+        border-left: 1px solid #382222;
+        background-color: #ebebeb;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    .navBtn {
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+        color: #262626;
+        text-decoration: underline;
+    }
+
+    .navBtn:hover {
+        background-color: transparent;
+        color: #cc8503;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .navMenu {
+        width: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .navMenu {
+       font-size: 15px;
+       width: 180px;
+       padding: 100px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navBar {
+        padding: 20px 20px;
+        justify-content: space-between;
+    }
 }

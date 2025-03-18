@@ -19,3 +19,17 @@
 .text p{
     margin-bottom: 10px;
 }
+
+@media(max-width: 1150px){
+    .text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 900px){
+    .legacy{
+        padding: 50px 10px 50px 10px;
+        overflow-y: scroll;
+    }
+}

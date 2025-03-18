@@ -3,7 +3,6 @@ import './ConnectForm.css';
 
 function ConnectForm() {
 
-    // useState to store the values of each input
     const [inputs, setInputs] = useState({});
     const [textArea, setTextArea] = useState('')
 
