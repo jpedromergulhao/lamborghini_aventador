@@ -48,6 +48,7 @@ main {
 @media (max-width: 950px) {
     .imgSet {
         justify-content: center;
+        justify-items: center;
         flex-direction: column;
         gap: 20px;
     }

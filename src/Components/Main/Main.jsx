@@ -12,19 +12,19 @@ function Main() {
                 <div className="imgSet">
                     <div>
                         <div className="imgBorder">
-                            <img src={lambo80} alt="Lamborghini 80's" loading="lazy" />
+                            <img src={lambo80} alt="Lamborghini 80's" />
                         </div>
                         <p>1980</p>
                     </div>
                     <div>
                         <div className="imgBorder">
-                            <img src={lambo00} alt="Lamborghini 00's" loading="lazy" />
+                            <img src={lambo00} alt="Lamborghini 00's" />
                         </div>
                         <p>2000</p>
                     </div>
                     <div>
                         <div className="imgBorder">
-                            <img src={lamboCurr} alt="Current Lamborghini" loading="lazy" />
+                            <img src={lamboCurr} alt="Current Lamborghini" />
                         </div>
                         <p>Nowadays</p>
                     </div>
