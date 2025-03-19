@@ -49,9 +49,37 @@ sup {
         opacity: 1;
     }
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .fade-in {
     animation: fadeIn 500ms ease-in-out;
+    -webkit-animation: fadeIn 500ms ease-in-out;
+    -moz-animation: fadeIn 500ms ease-in-out;
 }
 
 @media (max-width: 950px) {

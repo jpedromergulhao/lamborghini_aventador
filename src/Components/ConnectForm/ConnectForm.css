@@ -2,10 +2,11 @@
     width: 100vw;
     height: 100vh;
     padding: 50px;
+    overflow: hidden;
 }
 
 .formContainer {
-    margin: 80px auto auto auto;
+    margin: 60px auto auto auto;
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: darken;
