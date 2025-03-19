@@ -8,9 +8,8 @@
     bottom: 0;
     padding: none;
     position: fixed;
-    object-fit: cover;
     z-index: -1;
-    
     -webkit-object-fit: cover;
     -moz-object-fit: cover;
+    object-fit: cover;
 }

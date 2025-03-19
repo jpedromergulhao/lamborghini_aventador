@@ -77,9 +77,9 @@ sup {
 }
 
 .fade-in {
-    animation: fadeIn 500ms ease-in-out;
     -webkit-animation: fadeIn 500ms ease-in-out;
     -moz-animation: fadeIn 500ms ease-in-out;
+    animation: fadeIn 500ms ease-in-out;
 }
 
 @media (max-width: 950px) {

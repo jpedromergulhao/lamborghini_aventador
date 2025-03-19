@@ -27,25 +27,25 @@ function Footer() {
 
                 <div className="socialMedia">
                     <a href="https://www.instagram.com/lamborghini/?hl=en" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={instagram} alt="instagram" />
+                        <img className="icons" src={instagram} alt="instagram" loading="lazy" />
                     </a>
                     <a href="https://www.threads.net/@lamborghini" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={threads} alt="threads" />
+                        <img className="icons" src={threads} alt="threads" loading="lazy" />
                     </a>
                     <a href="https://www.facebook.com/Lamborghini/" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={facebook} alt="facebook" />
+                        <img className="icons" src={facebook} alt="facebook" loading="lazy" />
                     </a>
                     <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={youtube} alt="youtube" />
+                        <img className="icons" src={youtube} alt="youtube" loading="lazy" />
                     </a>
                     <a href="https://twitter.com/Lamborghini" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={twitter} alt="twitter" />
+                        <img className="icons" src={twitter} alt="twitter" loading="lazy" />
                     </a>
                     <a href="https://www.tiktok.com/@lamborghini?lang=en" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={tiktok} alt="tiktok" />
+                        <img className="icons" src={tiktok} alt="tiktok" loading="lazy" />
                     </a>
                     <a href="https://www.linkedin.com/company/automobili-lamborghini-s-p-a-" target="_blak" rel="noopener noreferrer">
-                        <img className="icons" src={linkedIn} alt="linkedIn" />
+                        <img className="icons" src={linkedIn} alt="linkedIn" loading="lazy" />
                     </a>
                 </div>
             </div>

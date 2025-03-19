@@ -22,7 +22,7 @@ function Overview() {
         <div className="overview">
             <h5>Overview</h5>
             <div className="overviewContent">
-                <img src={images[imgCount]} className="lambo fade-in" alt="Lamborghini Aventador" />
+                <img src={images[imgCount]} className="lambo fade-in" alt="Lamborghini Aventador" loading="lazy" />
                 <div className="table">
                     <h5>Technical Specification</h5>
                     <table>

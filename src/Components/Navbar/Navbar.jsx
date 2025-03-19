@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <>
             <nav className="navBar">
-                <img src={logo} alt="Lamborghini logo" className="navLogo" typeof="image/png" />
+                <img src={logo} alt="Lamborghini logo" className="navLogo" typeof="image/png" loading="lazy" />
                 <ul className="navMenu" ref={menu}>
                     <li>
                         <Link to="/">The Drive Begins</Link>
@@ -32,7 +32,7 @@ function Navbar() {
                     </li>
                 </ul>
 
-                <img ref={icon} onClick={handleClick} src={menuIcon} alt="menu" typeof="image/png" className="menuIcon" />
+                <img ref={icon} onClick={handleClick} src={menuIcon} alt="menu" typeof="image/png" className="menuIcon" loading="lazy" />
             </nav>
 
             <Outlet />
