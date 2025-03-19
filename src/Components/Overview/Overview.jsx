@@ -5,7 +5,7 @@ import img9 from '../../assets/9.png';
 
 function Overview() {
 
-    const images = [img8, img9];
+    const images = [img9, img8];
 
     const [imgCount, setImgCount] = useState(0);
     const intervalRef = useRef(null);
