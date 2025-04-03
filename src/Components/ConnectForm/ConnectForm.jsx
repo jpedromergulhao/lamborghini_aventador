@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import './ConnectForm.css';
 
 function ConnectForm() {
 
     const [inputs, setInputs] = useState({});
     const [textArea, setTextArea] = useState('')
+    const emailInput = useRef();
 
     const handleChange = (event) => {
         const name = event.target.name;
@@ -13,6 +14,20 @@ function ConnectForm() {
         setInputs(values => ({ ...values, [name]: value }));
     }
 
+    const handleEmail = (event) => {
+        const emailValue = event.target?.value || ""; 
+        setInputs(values => ({ ...values, email: emailValue }));
+    
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailValue)) {
+            event.target.setCustomValidity("Please enter a valid email address.");
+        } else {
+            event.target.setCustomValidity("");
+        }
+        event.target.reportValidity();
+    };
+    
+
     const handleTextAreaChange = (event) => {
         setTextArea(event.target.value);
     }
@@ -20,8 +35,9 @@ function ConnectForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         alert(`${inputs.name} your message has been sent successfully.`);
+        setInputs({});
+        setTextArea('');
     }
-
 
     return (
         <section className="connect">
@@ -34,7 +50,7 @@ function ConnectForm() {
                     </label>
                     <label>
                         <span>Your email:</span>
-                        <input className="infos" required type="text" name="email" value={inputs.email || ''} onChange={handleChange} />
+                        <input className="infos" required type="text" name="email" value={inputs.email || ''} ref={emailInput} onChange={handleEmail} />
                     </label>
                     <label>
                         <span>Country:</span>
@@ -46,7 +62,7 @@ function ConnectForm() {
                     </label>
                     <label className="textContainer">
                         <span>Specify why you want a Lamborghini:</span>
-                        <textarea value={textArea} onChange={handleTextAreaChange} />
+                        <textarea value={textArea} required onChange={handleTextAreaChange} />
                     </label>
                     <input className="submit" type="submit" />
                 </form>

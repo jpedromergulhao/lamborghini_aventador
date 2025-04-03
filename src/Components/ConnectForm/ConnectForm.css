@@ -6,7 +6,7 @@
 }
 
 .formContainer {
-    margin: 60px auto auto auto;
+    margin: auto;
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: darken;
@@ -16,7 +16,7 @@
     gap: 30px;
 }
 
-.formContainer h1{
+.formContainer h1 {
     font-size: 20px;
     line-height: 28px;
 }
@@ -27,25 +27,26 @@ form {
     gap: 10px;
     font-size: 12px;
 }
+
 form span,
-.submit{
+.submit {
     font-weight: bold;
 }
 
-label{
+label {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 
-.infos, 
-textarea{
+.infos,
+textarea {
     background-color: #262626;
     border: 1px solid #ebebeb;
     padding: 10px;
 }
 
-.submit{
+.submit {
     background-color: #ebebeb;
     padding: 10px;
     transition: all 0.2s ease-in-out;
@@ -53,13 +54,13 @@ textarea{
     color: #262626;
 }
 
-.submit:hover{
+.submit:hover {
     cursor: pointer;
     background-color: #cc8503;
     color: #262626;
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
     .connect {
         padding: 50px 10px 50px 10px;
     }
@@ -70,13 +71,8 @@ textarea{
     }
 }
 
-@media (max-width: 425px){
-
-    .formContainer{
-        margin: 60px auto auto auto;
-    }
-
-    .formContainer h1{
+@media (max-width: 425px) {
+    .formContainer h1 {
         font-size: 15px;
         line-height: 23px;
     }

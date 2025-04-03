@@ -7,6 +7,7 @@ import DiscExc from './Pages/DiscExc';
 import Legacy from './Pages/Legacy/Legacy';
 import Connect from './Pages/Connect';
 import NoPage from './Pages/NoPage';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -14,13 +15,14 @@ function App() {
       <div className="app">
         <Routes>
           <Route path='/' element={<Navbar />}>
-            <Route index element={<Home/>}/>
-            <Route path='/discoverExcellence' element={<DiscExc />}/>
-            <Route path='/legacy' element={<Legacy />}/>
-            <Route path='/conncet' element={<Connect />}/>
+            <Route index element={<Home />} />
+            <Route path='/discoverExcellence' element={<DiscExc />} />
+            <Route path='/legacy' element={<Legacy />} />
+            <Route path='/conncet' element={<Connect />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

@@ -1,6 +1,7 @@
 .hero {
-    padding: 170px 100px 0 100px;
+    padding: 100px 100px 0 100px;
     color: #ebebeb;
+    height: 100vh;
 }
 
 .hero h1 {
@@ -96,7 +97,7 @@
 
 @media (max-width: 950px) {
     .hero {
-        padding: 170px 60px 0 60px;
+        padding: 100px 60px 0 60px;
     }
 
     .hero h1 {
@@ -135,7 +136,7 @@
 
 @media (max-width: 550px) {
     .hero {
-        padding: 170px 20px 0 20px;
+        padding: 100px 20px 0 20px;
     }
 
     .hero h1 {
