@@ -38,6 +38,12 @@ main {
     color: #262626;
 }
 
+.imgSet div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width: 1220px) {
     .imgBorder {
         max-width: 300px;
@@ -47,14 +53,10 @@ main {
 
 @media (max-width: 950px) {
     .imgSet {
-        justify-content: center;
-        justify-items: center;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
-    }
-
-    .imgSet div {
-        justify-items: center;
     }
 }
 
@@ -67,5 +69,9 @@ main {
     .imgBorder {
         max-width: 200px;
         max-height: 50px;
+    }
+
+    .imgBorder img {
+        top: 0; 
     }
 }
