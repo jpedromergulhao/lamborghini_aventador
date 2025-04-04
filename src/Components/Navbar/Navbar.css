@@ -1,3 +1,4 @@
+/* NAVBAR */
 .navBar {
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,6 @@
     width: 45px;
     transition: transform 0.3s ease;
 }
-
 .navLogo:hover {
     transform: scale(1.1);
 }
@@ -35,13 +35,13 @@
     gap: 32px;
 }
 
+/* LINKS */
 li a {
     color: #262626;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
 }
-
 li a::after {
     content: "";
     position: absolute;
@@ -52,16 +52,14 @@ li a::after {
     background-color: #cc8503;
     transition: width 0.3s ease;
 }
-
 li a:hover {
     color: #cc8503;
 }
-
 li a:hover::after {
     width: 100%;
 }
 
-/* BOTÃO DE AÇÃO */
+/* BOTÃO */
 .navBtn {
     border-radius: 50px;
     padding: 10px 28px;
@@ -72,25 +70,27 @@ li a:hover::after {
     white-space: nowrap;
     text-align: center;
     display: inline-block;
+    word-break: keep-all;
+    max-width: 100%;
 }
-
 .navBtn:hover {
     background-color: #cc8503;
     color: #262626;
     box-shadow: 0 0 10px rgba(204, 133, 3, 0.4);
 }
 
+/* MENU ÍCONE */
 .menuIcon {
     height: 22px;
     display: none;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
 .menuIcon:hover {
     transform: scale(1.1);
 }
 
+/* OVERLAY */
 .overlay {
     position: fixed;
     top: 0;
@@ -103,12 +103,12 @@ li a:hover::after {
     pointer-events: none;
     transition: opacity 0.4s ease;
 }
-
 .overlay.active {
     opacity: 1;
     pointer-events: all;
 }
 
+/* Remove linha animada do botão */
 .navMenu li .navBtn::after {
     content: none !important;
 }
@@ -120,13 +120,12 @@ li a:hover::after {
     .navMenu {
         gap: 24px;
     }
-
     li a {
         font-size: 16px;
     }
 }
 
-/* Mobile */
+/* Mobile menu */
 @media (max-width: 1065px) {
     .menuIcon {
         display: block;
@@ -138,61 +137,47 @@ li a:hover::after {
         top: 0;
         right: -100%;
         height: 100vh;
-       width: fit-content;
+        min-width: 240px;
         display: none;
         flex-direction: column;
-        padding: 100px 40px;
+        padding: 100px 32px;
         transition: right 0.6s ease-in-out;
         border-left: 1px solid #ccc;
         background-color: rgba(235, 235, 235, 0.95);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .navMenu .navBtn {
-        width: 100%;
-        margin-top: 24px;
-        border-radius: 50px;
-        padding: 10px 28px;
-        background-color: #262626;
-        color: #ebebeb;
-        font-weight: bold;
-        transition: all 0.4s ease;
-        text-decoration: none;
-    }
-
-    .navMenu .navBtn:hover {
-        background-color: #cc8503;
-        color: #262626;
-        box-shadow: 0 0 10px rgba(204, 133, 3, 0.4);
-        text-decoration: none;
+        gap: 20px;
     }
 
     .navMenu.open {
         right: 0;
+        display: flex;
     }
 
     .navMenu .navBtn {
         width: 100%;
         text-align: center;
         margin-top: 24px;
-    }    
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
 
     .navBar {
         padding: 16px 40px;
     }
 }
 
+/* Dispositivos menores */
 @media (max-width: 650px) {
     .navMenu {
-        width: 220px;
+        min-width: 200px;
         padding: 80px 24px;
-        gap: 24px;
+        gap: 20px;
     }
 }
 
 @media (max-width: 550px) {
     .navMenu {
-        width: 200px;
+        min-width: 180px;
         font-size: 15px;
         padding: 80px 16px;
     }
@@ -205,5 +190,15 @@ li a:hover::after {
 
     .navLogo {
         width: 40px;
+    }
+
+    .navMenu {
+        padding: 70px 16px;
+        gap: 18px;
+    }
+
+    .navMenu .navBtn {
+        font-size: 14px;
+        padding: 10px 16px;
     }
 }
