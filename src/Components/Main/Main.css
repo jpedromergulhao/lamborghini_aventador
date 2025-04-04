@@ -70,4 +70,8 @@ main {
         max-width: 200px;
         max-height: 50px;
     }
+
+    .imgBorder img {
+        top: -40px
+    }
 }
