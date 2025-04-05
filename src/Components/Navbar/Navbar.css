@@ -1,11 +1,10 @@
-/* NAVBAR */
+/* === NAVBAR === */
 .navBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* de volta ao estilo clássico */
     align-items: center;
-    padding: 16px 80px;
-    background-color: rgba(235, 235, 235, 0.9);
-    backdrop-filter: blur(6px);
+    padding: 20px 100px;
+    background-color: #ebebeb;
     position: sticky;
     top: 0;
     left: 0;
@@ -16,32 +15,36 @@
     transition: background-color 0.3s ease;
 }
 
-/* LOGO */
+/* === LOGO === */
 .navLogo {
-    width: 45px;
+    width: 40px;
     transition: transform 0.3s ease;
 }
+
 .navLogo:hover {
     transform: scale(1.1);
 }
 
-/* MENU */
+/* === MENU === */
 .navMenu {
     display: flex;
     align-items: center;
     list-style: none;
     font-size: 18px;
     font-weight: bold;
-    gap: 32px;
+    gap: 40px;
 }
 
-/* LINKS */
+/* === LINKS === */
 li a {
     color: #262626;
+    font-weight: bold;
+    white-space: nowrap;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
 }
+
 li a::after {
     content: "";
     position: absolute;
@@ -52,17 +55,19 @@ li a::after {
     background-color: #cc8503;
     transition: width 0.3s ease;
 }
+
 li a:hover {
     color: #cc8503;
 }
+
 li a:hover::after {
     width: 100%;
 }
 
-/* BOTÃO */
+/* === BOTÃO === */
 .navBtn {
     border-radius: 50px;
-    padding: 10px 28px;
+    padding: 10px 38px;
     background-color: #262626;
     color: #ebebeb;
     font-weight: bold;
@@ -70,27 +75,28 @@ li a:hover::after {
     white-space: nowrap;
     text-align: center;
     display: inline-block;
-    word-break: keep-all;
     max-width: 100%;
 }
+
 .navBtn:hover {
     background-color: #cc8503;
     color: #262626;
     box-shadow: 0 0 10px rgba(204, 133, 3, 0.4);
 }
 
-/* MENU ÍCONE */
+/* === MENU ÍCONE === */
 .menuIcon {
-    height: 22px;
+    height: 20px;
     display: none;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 .menuIcon:hover {
     transform: scale(1.1);
 }
 
-/* OVERLAY */
+/* === OVERLAY === */
 .overlay {
     position: fixed;
     top: 0;
@@ -103,6 +109,7 @@ li a:hover::after {
     pointer-events: none;
     transition: opacity 0.4s ease;
 }
+
 .overlay.active {
     opacity: 1;
     pointer-events: all;
@@ -117,88 +124,70 @@ li a:hover::after {
 
 /* Tablet */
 @media (max-width: 1240px) {
-    .navMenu {
-        gap: 24px;
+    .navBar {
+        gap: 50px;
     }
+
     li a {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
-/* Mobile menu */
+/* Mobile */
 @media (max-width: 1065px) {
     .menuIcon {
         display: block;
-        z-index: 1100;
+        z-index: 1000;
     }
 
     .navMenu {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
-        min-width: 240px;
-        display: none;
+        width: fit-content;
+        display: flex;
         flex-direction: column;
-        padding: 100px 32px;
+        padding: 100px 40px;
         transition: right 0.6s ease-in-out;
-        border-left: 1px solid #ccc;
-        background-color: rgba(235, 235, 235, 0.95);
+        border-left: 1px solid #382222;
+        background-color: #ebebeb;
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.05);
-        gap: 20px;
+    }
+
+    .navMenu .navBtn {
+        padding: 8px 15px;
+        box-sizing: border-box;
+        font-size: 12px;
     }
 
     .navMenu.open {
         right: 0;
-        display: flex;
-    }
-
-    .navMenu .navBtn {
-        width: 100%;
-        text-align: center;
-        margin-top: 24px;
-        padding: 10px 20px;
-        white-space: nowrap;
-    }
-
-    .navBar {
-        padding: 16px 40px;
     }
 }
 
-/* Dispositivos menores */
+/* Telas pequenas */
 @media (max-width: 650px) {
     .navMenu {
-        min-width: 200px;
-        padding: 80px 24px;
-        gap: 20px;
+        width: 220px;
     }
 }
 
 @media (max-width: 550px) {
     .navMenu {
-        min-width: 180px;
         font-size: 15px;
-        padding: 80px 16px;
+        width: 200px;
+        padding: 100px 20px;
     }
 }
 
 @media (max-width: 480px) {
     .navBar {
-        padding: 16px 20px;
+        padding: 20px 20px;
+        justify-content: space-between;
     }
 
     .navLogo {
-        width: 40px;
-    }
-
-    .navMenu {
-        padding: 70px 16px;
-        gap: 18px;
-    }
-
-    .navMenu .navBtn {
-        font-size: 14px;
-        padding: 10px 16px;
+        width: 35px;
     }
 }
