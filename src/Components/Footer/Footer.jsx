@@ -26,25 +26,25 @@ function Footer() {
                 </div>
 
                 <div className="socialMedia">
-                    <a href="https://www.instagram.com/lamborghini/?hl=en" target="_blak" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/lamborghini/?hl=en" aria-label="Link to Instagram" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={instagram} alt="instagram" loading="lazy" />
                     </a>
-                    <a href="https://www.threads.net/@lamborghini" target="_blak" rel="noopener noreferrer">
+                    <a href="https://www.threads.net/@lamborghini" aria-label="Link to Threads" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={threads} alt="threads" loading="lazy" />
                     </a>
-                    <a href="https://www.facebook.com/Lamborghini/" target="_blak" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/Lamborghini/" aria-label="Link to Facebook" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={facebook} alt="facebook" loading="lazy" />
                     </a>
-                    <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" target="_blak" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" aria-label="Link to Youtube" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={youtube} alt="youtube" loading="lazy" />
                     </a>
-                    <a href="https://twitter.com/Lamborghini" target="_blak" rel="noopener noreferrer">
+                    <a href="https://twitter.com/Lamborghini" aria-label="Link to Twitter" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={twitter} alt="twitter" loading="lazy" />
                     </a>
-                    <a href="https://www.tiktok.com/@lamborghini?lang=en" target="_blak" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@lamborghini?lang=en" aria-label="Link to Tiktok" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={tiktok} alt="tiktok" loading="lazy" />
                     </a>
-                    <a href="https://www.linkedin.com/company/automobili-lamborghini-s-p-a-" target="_blak" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/automobili-lamborghini-s-p-a-" aria-label="Link to LinkedIn" target="_blak" rel="noopener noreferrer">
                         <img className="icons" src={linkedIn} alt="linkedIn" loading="lazy" />
                     </a>
                 </div>
