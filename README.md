@@ -6,15 +6,12 @@ An immersive web experience featuring high-quality visuals, interactive elements
 
 ## 🚀 Features
 - Dynamic background switching between images and video
-- Smooth animations with AOS (Animate On Scroll)
-- Interactive 3D model integration using Three.js
 - Responsive and modern UI with React.js
 - Optimized for performance and SEO
 
 ## 🛠️ Technologies Used
 - React.js
 - React Router
-- AOS (Animate On Scroll)
 - Vercel (Deployment)
 - HTML, CSS, JavaScript
 
