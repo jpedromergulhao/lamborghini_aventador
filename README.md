@@ -2,6 +2,8 @@
 
 An immersive web experience featuring high-quality visuals, interactive elements, and a sleek design to showcase the Lamborghini Aventador.
 
+![Home Screen](./Screenshot.png)
+
 ## 🚀 Features
 - Dynamic background switching between images and video
 - Smooth animations with AOS (Animate On Scroll)
